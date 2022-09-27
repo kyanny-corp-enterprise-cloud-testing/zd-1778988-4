@@ -1,0 +1,10 @@
+name: caller2
+on:
+  workflow_dispatch:
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello main job
+  caller:
+    uses: kyanny-corp-enterprise-cloud-testing/zd-1778988-4/.github/workflows/reusable2.yaml@main
